@@ -51,16 +51,24 @@ see [here](https://github.com/vikiboss/node-utils/blob/main/src/index.ts) for fu
 
 - await-to-js
 - axios
+- boxen
 - colorette
 - dayjs
+- deepmerge
+- execa
+- globby
 - gradient-string
 - kind-of
 - mkdirp
 - mri
 - nanoid
 - node-cron
+- ora
+- prompts
+- rfdc
 - rimraf
 - rollup
+- semver
 - tinycolor2
 - yargs
 
