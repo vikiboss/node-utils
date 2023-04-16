@@ -1,11 +1,11 @@
 {
   "name": "@vmoe/node-utils",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "description": "common node utils in pure ESM format",
+  "description": "common and useful node utils in pure ESM format",
   "keywords": [
     "utils",
     "toolkit"
@@ -25,7 +25,8 @@
   },
   "scripts": {
     "dev": "npm run build -- --watch src",
-    "build": "tsup src/index.ts --format esm --dts --clean"
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "release": "npm publish"
   },
   "dependencies": {
     "@types/gradient-string": "^1.1.2",
@@ -48,5 +49,8 @@
   "devDependencies": {
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
