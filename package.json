@@ -1,6 +1,6 @@
 {
   "name": "@vmoe/node-utils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
@@ -15,6 +15,8 @@
   "files": [
     "lib"
   ],
+  "repository": "vikiboss/node-utils",
+  "homepage": "https://github.com/vikiboss/node-utils#readme",
   "exports": {
     ".": {
       "types": "./lib/index.d.ts",

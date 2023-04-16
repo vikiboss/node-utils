@@ -11,3 +11,5 @@ export { dayjs }
 export function time(format?: string, date?: Date): string {
   return dayjs(date || new Date()).format(format || 'YYYY-MM-DD HH:mm')
 }
+
+export const now = time
