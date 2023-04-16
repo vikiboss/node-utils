@@ -27,7 +27,8 @@
   },
   "scripts": {
     "dev": "npm run build -- --watch src",
-    "build": "tsup src/index.ts --format esm --dts --clean",
+    "build": "tsup",
+    "prerelease": "npm run build",
     "release": "npm publish"
   },
   "dependencies": {

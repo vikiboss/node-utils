@@ -3,6 +3,8 @@ import { Options } from 'tsup'
 export default {
   entry: ['src/index.ts'],
   outDir: 'lib',
+  dts: true,
+  format: 'esm',
   splitting: false,
   sourcemap: true,
   clean: true,
