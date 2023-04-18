@@ -1,6 +1,6 @@
 {
   "name": "@vmoe/node-utils",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "type": "module",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
@@ -39,9 +39,10 @@
     "@types/prompts": "^2.4.4",
     "@types/semver": "^7.3.13",
     "@types/tinycolor2": "^1.4.3",
+    "@vmoe/node-utils": "^1.3.1",
     "axios": "^1.3.5",
     "boxen": "^7.0.2",
-    "colorette": "^2.0.19",
+    "colorette": "^2.0.20",
     "dayjs": "^1.11.7",
     "deepmerge": "^4.3.1",
     "execa": "^7.1.1",
@@ -56,7 +57,7 @@
     "prompts": "^2.4.2",
     "rfdc": "^1.3.0",
     "rimraf": "^5.0.0",
-    "semver": "^7.4.0",
+    "semver": "^7.5.0",
     "tinycolor2": "^1.6.0"
   },
   "devDependencies": {

@@ -6,7 +6,7 @@ export default {
   dts: true,
   format: 'esm',
   splitting: false,
-  sourcemap: true,
+  sourcemap: false,
   clean: true,
   minify: true,
   minifyIdentifiers: true,
