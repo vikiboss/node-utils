@@ -13,3 +13,5 @@ const request = axios.create({
 })
 
 export { axios, request }
+
+export * from 'axios'

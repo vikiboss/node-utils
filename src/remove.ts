@@ -3,3 +3,5 @@ import { rimraf } from 'rimraf'
 
 export const removeSync = rimraf
 export const remove = promisify(rimraf)
+
+export * from 'rimraf'

@@ -12,3 +12,5 @@ export { default as gradient } from 'gradient-string'
 export function escapeColor(coloredText: string) {
   return coloredText.replace(/\u001b\[\d+m/gu, '')
 }
+
+export * from 'colorette'
