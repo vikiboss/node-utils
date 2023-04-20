@@ -1,7 +1,7 @@
 import { Options } from 'tsup'
 
 export default {
-  entry: ['src/index.ts', 'src/functions/index.ts', 'src/modules/*/index.ts'],
+  entry: ['src/index.ts', 'src/modules/*/index.ts'],
   outDir: 'lib',
   sourcemap: true,
   dts: true,

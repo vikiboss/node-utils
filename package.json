@@ -24,12 +24,6 @@
       "import": "./lib/index.js",
       "default": "./lib/index.js"
     },
-    "./functions": {
-      "types": "./lib/functions/index.d.ts",
-      "require": null,
-      "import": "./lib/functions/index.js",
-      "default": "./lib/functions/index.js"
-    },
     "./*": {
       "types": "./lib/modules/*/index.d.ts",
       "require": null,
@@ -50,6 +44,7 @@
     "colorette": "^2.0.20",
     "dayjs": "^1.11.7",
     "deepmerge": "^4.3.1",
+    "defu": "^6.1.2",
     "execa": "^7.1.1",
     "globby": "^13.1.4",
     "gradient-string": "^2.0.2",

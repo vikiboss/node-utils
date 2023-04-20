@@ -1,20 +1,14 @@
-// @from https://github.com/rollup/rollup/blob/c4cb2642efb9934735200eff98cfafb6888c1e6f/src/utils/colors.ts
-
 import { env } from 'node:process'
 import { createColors } from 'colorette'
 
 import type { Colorette } from 'colorette'
 
 const useColor = env.FORCE_COLOR !== '0' && !env.NO_COLOR
+const pattern = createColors({ useColor }) as Colorette
 
-export const { bold, cyan, dim, gray, green, red, underline, yellow, reset, italic } = createColors(
-  { useColor }
-) as Colorette
+// color
+export const { green, red, blue, yellow, magenta, cyan, gray, white } = pattern
+// style
+export const { dim, bold, underline, italic, reset, hidden } = pattern
 
 export { default as gradient } from 'gradient-string'
-
-export function escapeColor(coloredText: string) {
-  return coloredText.replace(/\u001b\[\d+m/gu, '')
-}
-
-export * from 'colorette'
