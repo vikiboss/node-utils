@@ -88,4 +88,4 @@ see [here](https://github.com/vikiboss/node-utils/blob/main/src/index.ts) for fu
 
 [MIT](LICENSE) License © 2023-PRESENT Viki
 
-[pure ESM][https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c]
+[pure ESM]: [https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c]
