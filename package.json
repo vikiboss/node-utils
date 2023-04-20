@@ -1,6 +1,6 @@
 {
   "name": "@vmoe/node-utils",
-  "version": "1.4.0",
+  "version": "2.0.0.rc-1",
   "type": "module",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
@@ -33,6 +33,7 @@
   },
   "scripts": {
     "dev": "tsup --config tsup.config.dev.ts",
+    "prebuild": "npm run lint:fix",
     "build": "tsup --config tsup.config.build.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

@@ -1,6 +1,4 @@
-import deepmerge from 'deepmerge'
-import kindOf from 'kind-of'
-import mri from 'mri'
-import tinycolor2 from 'tinycolor2'
-
-export { deepmerge, tinycolor2, kindOf, mri }
+export { default as deepMerge } from 'deepmerge'
+export { default as kindOf } from 'kind-of'
+export { default as mri } from 'mri'
+export { default as tinyColor } from 'tinycolor2'
