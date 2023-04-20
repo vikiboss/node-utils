@@ -3,9 +3,13 @@
 import { env } from 'node:process'
 import { createColors } from 'colorette'
 
+import type { Colorette } from 'colorette'
+
 const useColor = env.FORCE_COLOR !== '0' && !env.NO_COLOR
 
-export const { bold, cyan, dim, gray, green, red, underline, yellow } = createColors({ useColor })
+export const { bold, cyan, dim, gray, green, red, underline, yellow, reset, italic } = createColors(
+  { useColor }
+) as Colorette
 
 export { default as gradient } from 'gradient-string'
 

@@ -8,8 +8,22 @@ export { dayjs }
  * @param {Date | undefined} date 待格式化的时间，默认当前时间
  * @return {string} 格式化后的时间字符串
  */
-export function time(format?: string, date?: Date): string {
+export function now(format?: string, date?: Date): string {
   return dayjs(date || new Date()).format(format || 'YYYY-MM-DD HH:mm')
 }
 
-export const now = time
+export function date(format?: string, date?: Date): string {
+  return dayjs(date || new Date()).format(format || 'YYYY-MM-DD')
+}
+
+export function time(format?: string, date?: Date): string {
+  return dayjs(date || new Date()).format(format || 'HH:mm')
+}
+
+export function msTime(format?: string, date?: Date): string {
+  return dayjs(date || new Date()).format(format || 'HH:mm:ss')
+}
+
+export function ms(date?: Date): number {
+  return (date || new Date()).getTime()
+}

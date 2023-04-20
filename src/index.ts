@@ -19,6 +19,7 @@ export * from './shuffle'
 export * from './sum'
 export * from './await-to'
 export * from './wait'
+export * from './log'
 
 export * from 'mkdirp'
 export * as boxen from 'boxen'
