@@ -1,13 +1,21 @@
 # node utils
 
-A collection of common and useful node utils of the **Best Practice**.
+> Common and useful [Node.js](https://nodejs.org/) utils of **Best Practice**.
 
-> This package is [pure ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).
+> NOTE: this package is [pure ESM][pure esm] now.
 
 ## Installation
 
+**npm**
+
 ```bash
 npm install @vmoe/node-utils
+```
+
+**or pnpm**
+
+```bash
+pnpm add @vmoe/node-utils
 ```
 
 ## Usage
@@ -39,7 +47,7 @@ console.log(qs(JSON.parse(data))) // "name=node-utils&author=Viki"
 removeSync(file)
 ```
 
-## Full Utils
+## Utils List
 
 see [here](https://github.com/vikiboss/node-utils/blob/main/src/index.ts) for full utils list.
 
@@ -79,3 +87,5 @@ see [here](https://github.com/vikiboss/node-utils/blob/main/src/index.ts) for fu
 ## License
 
 [MIT](LICENSE) License © 2023-PRESENT Viki
+
+[pure ESM][https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c]

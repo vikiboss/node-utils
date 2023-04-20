@@ -23,24 +23,29 @@
       "require": null,
       "import": "./lib/index.js",
       "default": "./lib/index.js"
+    },
+    "./functions": {
+      "types": "./lib/functions/index.d.ts",
+      "require": null,
+      "import": "./lib/functions/index.js",
+      "default": "./lib/functions/index.js"
+    },
+    "./*": {
+      "types": "./lib/modules/*/index.d.ts",
+      "require": null,
+      "import": "./lib/modules/*/index.js",
+      "default": "./lib/modules/*/index.js"
     }
   },
   "scripts": {
-    "dev": "npm run build -- --watch src",
-    "build": "tsup",
+    "dev": "tsup --config tsup.config.dev.ts",
+    "build": "tsup --config tsup.config.build.ts",
     "prerelease": "npm run build",
     "release": "npm publish"
   },
   "dependencies": {
-    "@types/gradient-string": "^1.1.2",
-    "@types/kind-of": "^6.0.0",
-    "@types/node": "^18.15.11",
-    "@types/node-cron": "^3.0.7",
-    "@types/prompts": "^2.4.4",
-    "@types/semver": "^7.3.13",
-    "@types/tinycolor2": "^1.4.3",
-    "@vmoe/node-utils": "^1.3.1",
-    "axios": "^1.3.5",
+    "await-to-js": "^3.0.0",
+    "axios": "^1.3.6",
     "boxen": "^7.0.2",
     "colorette": "^2.0.20",
     "dayjs": "^1.11.7",
@@ -49,7 +54,6 @@
     "globby": "^13.1.4",
     "gradient-string": "^2.0.2",
     "kind-of": "^6.0.3",
-    "mkdirp": "^3.0.0",
     "mri": "^1.2.0",
     "nanoid": "^4.0.2",
     "node-cron": "^3.0.2",
@@ -61,6 +65,13 @@
     "tinycolor2": "^1.6.0"
   },
   "devDependencies": {
+    "@types/gradient-string": "^1.1.2",
+    "@types/kind-of": "^6.0.0",
+    "@types/node": "^18.15.12",
+    "@types/node-cron": "^3.0.7",
+    "@types/prompts": "^2.4.4",
+    "@types/semver": "^7.3.13",
+    "@types/tinycolor2": "^1.4.3",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },

@@ -1,33 +1,12 @@
 lockfileVersion: '6.0'
 
 dependencies:
-  '@types/gradient-string':
-    specifier: ^1.1.2
-    version: 1.1.2
-  '@types/kind-of':
-    specifier: ^6.0.0
-    version: 6.0.0
-  '@types/node':
-    specifier: ^18.15.11
-    version: 18.15.11
-  '@types/node-cron':
-    specifier: ^3.0.7
-    version: 3.0.7
-  '@types/prompts':
-    specifier: ^2.4.4
-    version: 2.4.4
-  '@types/semver':
-    specifier: ^7.3.13
-    version: 7.3.13
-  '@types/tinycolor2':
-    specifier: ^1.4.3
-    version: 1.4.3
-  '@vmoe/node-utils':
-    specifier: ^1.3.1
-    version: 1.3.1
+  await-to-js:
+    specifier: ^3.0.0
+    version: 3.0.0
   axios:
-    specifier: ^1.3.5
-    version: 1.3.5
+    specifier: ^1.3.6
+    version: 1.3.6
   boxen:
     specifier: ^7.0.2
     version: 7.0.2
@@ -52,9 +31,6 @@ dependencies:
   kind-of:
     specifier: ^6.0.3
     version: 6.0.3
-  mkdirp:
-    specifier: ^3.0.0
-    version: 3.0.0
   mri:
     specifier: ^1.2.0
     version: 1.2.0
@@ -84,6 +60,27 @@ dependencies:
     version: 1.6.0
 
 devDependencies:
+  '@types/gradient-string':
+    specifier: ^1.1.2
+    version: 1.1.2
+  '@types/kind-of':
+    specifier: ^6.0.0
+    version: 6.0.0
+  '@types/node':
+    specifier: ^18.15.12
+    version: 18.15.12
+  '@types/node-cron':
+    specifier: ^3.0.7
+    version: 3.0.7
+  '@types/prompts':
+    specifier: ^2.4.4
+    version: 2.4.4
+  '@types/semver':
+    specifier: ^7.3.13
+    version: 7.3.13
+  '@types/tinycolor2':
+    specifier: ^1.4.3
+    version: 1.4.3
   tsup:
     specifier: ^6.7.0
     version: 6.7.0(typescript@5.0.4)
@@ -354,69 +351,35 @@ packages:
     resolution: {integrity: sha512-zIet2KvHr2dkOCPI5ggQQ+WJVyfBSFaqK9sNelhgDjlE2K3Fu2muuPJwu5aKM3xoWuc3WXudVEMUwI1QWhykEQ==}
     dependencies:
       '@types/tinycolor2': 1.4.3
-    dev: false
+    dev: true
 
   /@types/kind-of@6.0.0:
     resolution: {integrity: sha512-OBts6MHCrq558cvND5nsWhoThwJaNu5lmGnSp3H0gFzQQc5QYM9p7HajIdS+2bgDquGX1qLZCPlyuYSxMDffAg==}
     dependencies:
-      '@types/node': 18.15.11
-    dev: false
+      '@types/node': 18.15.12
+    dev: true
 
   /@types/node-cron@3.0.7:
     resolution: {integrity: sha512-9PuLtBboc/+JJ7FshmJWv769gDonTpItN0Ol5TMwclpSQNjVyB2SRxSKBcTtbSysSL5R7Oea06kTTFNciCoYwA==}
-    dev: false
+    dev: true
 
-  /@types/node@18.15.11:
-    resolution: {integrity: sha512-E5Kwq2n4SbMzQOn6wnmBjuK9ouqlURrcZDVfbo9ftDDTFt3nk7ZKK4GMOzoYgnpQJKcxwQw+lGaBvvlMo0qN/Q==}
-    dev: false
+  /@types/node@18.15.12:
+    resolution: {integrity: sha512-Wha1UwsB3CYdqUm2PPzh/1gujGCNtWVUYF0mB00fJFoR4gTyWTDPjSm+zBF787Ahw8vSGgBja90MkgFwvB86Dg==}
+    dev: true
 
   /@types/prompts@2.4.4:
     resolution: {integrity: sha512-p5N9uoTH76lLvSAaYSZtBCdEXzpOOufsRjnhjVSrZGXikVGHX9+cc9ERtHRV4hvBKHyZb1bg4K+56Bd2TqUn4A==}
     dependencies:
-      '@types/node': 18.15.11
+      '@types/node': 18.15.12
       kleur: 3.0.3
-    dev: false
+    dev: true
 
   /@types/semver@7.3.13:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
-    dev: false
+    dev: true
 
   /@types/tinycolor2@1.4.3:
     resolution: {integrity: sha512-Kf1w9NE5HEgGxCRyIcRXR/ZYtDv0V8FVPtYHwLxl0O+maGX0erE77pQlD0gpP+/KByMZ87mOA79SjifhSB3PjQ==}
-    dev: false
-
-  /@vmoe/node-utils@1.3.1:
-    resolution: {integrity: sha512-W2S9/GfpFTKWSQCFwxwO8rYJdj3xuEhQE9na/pp1YArA7Ld9BVWmSXPdXu1bUo/wCY4OljDJBE2NIGhDc54FzA==}
-    dependencies:
-      '@types/gradient-string': 1.1.2
-      '@types/kind-of': 6.0.0
-      '@types/node': 18.15.11
-      '@types/node-cron': 3.0.7
-      '@types/prompts': 2.4.4
-      '@types/semver': 7.3.13
-      '@types/tinycolor2': 1.4.3
-      axios: 1.3.5
-      boxen: 7.0.2
-      colorette: 2.0.20
-      dayjs: 1.11.7
-      deepmerge: 4.3.1
-      execa: 7.1.1
-      globby: 13.1.4
-      gradient-string: 2.0.2
-      kind-of: 6.0.3
-      mkdirp: 3.0.0
-      mri: 1.2.0
-      nanoid: 4.0.2
-      node-cron: 3.0.2
-      ora: 6.3.0
-      prompts: 2.4.2
-      rfdc: 1.3.0
-      rimraf: 5.0.0
-      semver: 7.5.0
-      tinycolor2: 1.6.0
-    transitivePeerDependencies:
-      - debug
-    dev: false
 
   /ansi-align@3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
@@ -467,8 +430,13 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: false
 
-  /axios@1.3.5:
-    resolution: {integrity: sha512-glL/PvG/E+xCWwV8S6nCHcrfg1exGx7vxyUIivIA1iL7BIh6bePylCfVHwp6k13ao7SATxB6imau2kqY+I67kw==}
+  /await-to-js@3.0.0:
+    resolution: {integrity: sha512-zJAaP9zxTcvTHRlejau3ZOY4V7SRpiByf3/dxx2uyKxxor19tpmpV2QRsTKikckwhaPmr2dVpxxMr7jOCYVp5g==}
+    engines: {node: '>=6.0.0'}
+    dev: false
+
+  /axios@1.3.6:
+    resolution: {integrity: sha512-PEcdkk7JcdPiMDkvM4K6ZBRYq9keuVJsToxm2zQIM70Qqo2WHTdJZMXcG9X+RmRp2VPNUQC8W1RAGbgt6b1yMg==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
@@ -992,7 +960,6 @@ packages:
   /kleur@3.0.3:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
     engines: {node: '>=6'}
-    dev: false
 
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
@@ -1083,12 +1050,6 @@ packages:
   /minipass@5.0.0:
     resolution: {integrity: sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==}
     engines: {node: '>=8'}
-    dev: false
-
-  /mkdirp@3.0.0:
-    resolution: {integrity: sha512-7+JDnNsyCvZXoUJdkMR0oUE2AmAdsNXGTmRbiOjYIwQ6q+bL6NwrozGQdPcmYaNcrhH37F50HHBUzoaBV6FITQ==}
-    engines: {node: '>=10'}
-    hasBin: true
     dev: false
 
   /mri@1.2.0:

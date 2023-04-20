@@ -1,13 +1,8 @@
 import { Options } from 'tsup'
+import baseConfig from './tsup.config.base'
 
 export default {
-  entry: ['src/index.ts'],
-  outDir: 'lib',
-  dts: true,
-  format: 'esm',
-  splitting: false,
-  sourcemap: false,
-  clean: true,
+  ...baseConfig,
   minify: true,
   minifyIdentifiers: true,
   minifyWhitespace: true,
