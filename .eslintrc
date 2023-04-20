@@ -1,0 +1,7 @@
+{
+  "extends": "@vmoe",
+  "rules": {
+    "no-use-before-define": "off",
+    "no-redeclare": "off"
+  }
+}

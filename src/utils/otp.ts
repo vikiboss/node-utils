@@ -4,7 +4,5 @@ export function OTP(length: number) {
     throw Error('This is merely for OTP whose length is within 6 and 16')
   }
 
-  return Math.random()
-    .toString()
-    .slice(2, length + 2)
+  return String(Math.random()).slice(2, length + 2)
 }

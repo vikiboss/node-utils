@@ -34,6 +34,8 @@
   "scripts": {
     "dev": "tsup --config tsup.config.dev.ts",
     "build": "tsup --config tsup.config.build.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "prerelease": "npm run build",
     "release": "npm publish"
   },
@@ -67,6 +69,10 @@
     "@types/prompts": "^2.4.4",
     "@types/semver": "^7.3.13",
     "@types/tinycolor2": "^1.4.3",
+    "@vmoe/eslint-config": "^0.3.1",
+    "@vmoe/prettier-config": "^1.0.0",
+    "eslint": "^8.38.0",
+    "prettier": "^2.8.7",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },

@@ -1,5 +1,6 @@
-import { Options } from 'tsup'
 import baseConfig from './tsup.config.base'
+
+import type { Options } from 'tsup'
 
 export default {
   ...baseConfig,

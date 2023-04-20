@@ -1,5 +1,5 @@
-import { env } from 'node:process'
 import { createColors } from 'colorette'
+import { env } from 'node:process'
 
 import type { Colorette } from 'colorette'
 
