@@ -20,8 +20,12 @@ export function time(format?: string, date?: Date): string {
   return dayjs(date || new Date()).format(format || 'HH:mm')
 }
 
-export function msTime(format?: string, date?: Date): string {
+export function sTime(format?: string, date?: Date): string {
   return dayjs(date || new Date()).format(format || 'HH:mm:ss')
+}
+
+export function msTime(format?: string, date?: Date): string {
+  return dayjs(date || new Date()).format(format || 'HH:mm:ss:SSS')
 }
 
 export function ms(date?: Date): number {
