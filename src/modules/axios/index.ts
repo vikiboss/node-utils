@@ -17,3 +17,4 @@ export const request = axios.create({
 }) as AxiosInstance
 
 export * from 'axios'
+export { default as axios } from 'axios'

@@ -9,3 +9,4 @@ export const loading = ora({
 })
 
 export * from 'ora'
+export { default as ora } from 'ora'
