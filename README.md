@@ -2,6 +2,20 @@
 
 > Common and useful [Node.js](https://nodejs.org/) utils of **Best Practice** in [pure ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c), especially when developing node scripts.
 
+## Installation
+
+**npm**
+
+```bash
+npm install @vmoe/node-utils
+```
+
+**pnpm**
+
+```bash
+pnpm add @vmoe/node-utils
+```
+
 ## Usage
 
 **Built-in utils**
@@ -35,20 +49,6 @@ import { loading } from '@vmoe/node-utils/ora'
 ```
 
 > see [modules](./src/modules) folder for all external modules.
-
-## Installation
-
-**npm**
-
-```bash
-npm install @vmoe/node-utils
-```
-
-**pnpm**
-
-```bash
-pnpm add @vmoe/node-utils
-```
 
 ## License
 
