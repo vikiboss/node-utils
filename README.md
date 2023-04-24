@@ -27,11 +27,11 @@ await fs.writeFile('./demo.txt', time() + en + JSON.stringify(obj))
 **External Modules (tree shaking support)**
 
 ```ts
-import { request } from './src/modules/axios'
-import { cron } from './src/modules/cron'
-import { execa } from './src/modules/execa'
-import { globby } from './src/modules/globby'
-import { loading } from './src/modules/ora'
+import { request } from '@vmoe/node-utils/axios'
+import { cron } from '@vmoe/node-utils/cron'
+import { execa } from '@vmoe/node-utils/execa'
+import { globby } from '@vmoe/node-utils/globby'
+import { loading } from '@vmoe/node-utils/ora'
 ```
 
 > see [modules](./src/modules) folder for all external modules.
