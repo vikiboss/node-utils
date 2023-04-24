@@ -13,10 +13,10 @@ export function now(format?: string): string {
 
 /**
  * 取毫秒数（默认为当前时间戳，也就是自 1970 年 1 月 1 日 00:00:00 UTC 起至当前时间的总毫秒数）
- * @param {Date | undefined} date 可选传入的时间
+ * @param {Date | string | undefined} date 可选传入的时间
  * @return {number} 13 位时间戳结果
  */
-export function ms(date?: Date): number {
+export function ms(date?: Date | string): number {
   return +new Date(date)
 }
 
@@ -29,22 +29,22 @@ export function timestamp(type?: 'unix'): number {
   return type === 'unix' ? Date.now() / 1000 : Date.now()
 }
 
-export function date(date?: Date): string {
-  return dayjs(date || new Date()).format('MM-DD')
+export function date(date?: Date | string): string {
+  return dayjs(new Date(date)).format('MM-DD')
 }
 
-export function yDate(date?: Date): string {
-  return dayjs(date || new Date()).format('YYYY-MM-DD')
+export function yDate(date?: Date | string): string {
+  return dayjs(new Date(date)).format('YYYY-MM-DD')
 }
 
-export function time(date?: Date): string {
-  return dayjs(date || new Date()).format('HH:mm')
+export function time(date?: Date | string): string {
+  return dayjs(new Date(date)).format('HH:mm')
 }
 
-export function sTime(date?: Date): string {
-  return dayjs(date || new Date()).format('HH:mm:ss')
+export function sTime(date?: Date | string): string {
+  return dayjs(new Date(date)).format('HH:mm:ss')
 }
 
-export function msTime(date?: Date): string {
-  return dayjs(date || new Date()).format('HH:mm:ss:SSS')
+export function msTime(date?: Date | string): string {
+  return dayjs(new Date(date)).format('HH:mm:ss:SSS')
 }
