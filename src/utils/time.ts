@@ -17,7 +17,7 @@ export function now(format?: string): string {
  * @return {number} 13 位时间戳结果
  */
 export function ms(date?: Date | string): number {
-  return +new Date(date)
+  return +normalizeDate(date)
 }
 
 /**
@@ -30,21 +30,31 @@ export function timestamp(type?: 'unix'): number {
 }
 
 export function date(date?: Date | string): string {
-  return dayjs(new Date(date)).format('MM-DD')
+  return dayjs(normalizeDate(date)).format('MM-DD')
 }
 
 export function yDate(date?: Date | string): string {
-  return dayjs(new Date(date)).format('YYYY-MM-DD')
+  return dayjs(normalizeDate(date)).format('YYYY-MM-DD')
 }
 
 export function time(date?: Date | string): string {
-  return dayjs(new Date(date)).format('HH:mm')
+  return dayjs(normalizeDate(date)).format('HH:mm')
 }
 
 export function sTime(date?: Date | string): string {
-  return dayjs(new Date(date)).format('HH:mm:ss')
+  return dayjs(normalizeDate(date)).format('HH:mm:ss')
 }
 
 export function msTime(date?: Date | string): string {
-  return dayjs(new Date(date)).format('HH:mm:ss:SSS')
+  return dayjs(normalizeDate(date)).format('HH:mm:ss:SSS')
+}
+
+function normalizeDate(date?: Date | string) {
+  if (typeof date === 'string' || typeof date === 'number') {
+    return new Date()
+  } else if (date instanceof Date) {
+    return date
+  } else {
+    return new Date()
+  }
 }

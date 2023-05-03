@@ -10,9 +10,7 @@ export const ChromeMobileUA = 'Mozilla/5.0 (Linux; Android 12; Mi 10) Chrome/112
 export const request = axios.create({
   headers: {
     'User-Agent': ChromeUA,
-    common: {
-      'Content-Type': 'application/json; charset=utf-8'
-    }
+    common: { 'Content-Type': 'application/json; charset=utf-8' }
   },
   timeout: 6000,
   withCredentials: true,
